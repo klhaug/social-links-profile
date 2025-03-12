@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+:root {
+    /* COLORS */
+    --grey-900: #141414;
+    --grey-800: #1F1F1F;
+    --grey-700: #333333;
+    --green-900: #C4F82A;
+    --white:#ffffff;
+
+    /* SIZING */
+    --size-500: 40px;
+    --size-300: 24px;
+    --size-200: 16px;
+    --size-175: 14px;
+    --size-150: 12px;
+    --size-100: 8px;
+    --size-50: 4px;
+}
+
+body {
+    font-family: Inter, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--grey-900);
+}
+
+.txt-lg-bold {
+    font-size: var(--size-300) ;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 600;
+    color: var(--white);
+    text-align: center;
+}
+
+.txt-md-regular {
+    font-size: var(--size-175);
+    line-height: 150%;
+    font-weight: 400;
+    color: var(--white);
+    text-align: center;
+}
+.txt-md-bold-green {
+    font-size: var(--size-175);
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--green-900);
+    text-align: center;
+}
+
+.txt-md-bold {
+    font-size: var(--size-175);
+    line-height: 150%;
+    font-weight: 700;
+    color: var(--white);
+    text-align: center;
+}
+
+.card {
+    box-sizing: border-box;
+    border-radius: var(--size-150);
+    max-width: 384px;
+    width: calc(100vw - 48px);
+    display: flex;
+    border-radius: var(--size-150);
+    flex-direction: column;
+    padding: var(--size-500) var(--size-300);
+    align-items: center;
+    gap: var(--size-300);
+    background-color: var(--grey-800);
+}
+
+img {
+    height: 88px;
+    width: 88px;
+    border-radius: 999px;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--size-50) ;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-200);
+    width: 100%;
+}
+
+.primary-button {
+    transition: 500ms;
+    margin: auto;
+    max-width: 304px;
+    display: flex;
+    color: var(--white);
+    padding: var(--spacing-150, 12px);
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background-color: var(--color-grey-700, #333);
+}
+
+.primary-button:hover{
+    transition-duration: 500ms;
+    background-color: var(--green-900) ;
+    color: var(--grey-700);
+}
