@@ -76,7 +76,7 @@ body {
     display: flex;
     border-radius: var(--size-150);
     flex-direction: column;
-    padding: var(--size-500) var(--size-300);
+    padding: var(--size-500);
     align-items: center;
     gap: var(--size-300);
     background-color: var(--grey-800);
@@ -103,7 +103,6 @@ img {
 }
 
 .primary-button {
-    transition: 500ms;
     margin: auto;
     max-width: 304px;
     display: flex;
@@ -119,4 +118,11 @@ img {
     transition-duration: 500ms;
     background-color: var(--green-900) ;
     color: var(--grey-700);
+}
+
+
+@media screen and (max-width: 440px) {
+    .card {
+        padding: var(--size-300);
+    }
 }
