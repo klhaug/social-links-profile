@@ -103,6 +103,7 @@ img {
 }
 
 .primary-button {
+    transition: background-color 0.3s ease;
     margin: auto;
     max-width: 304px;
     display: flex;
@@ -115,7 +116,6 @@ img {
 }
 
 .primary-button:hover{
-    transition-duration: 500ms;
     background-color: var(--green-900) ;
     color: var(--grey-700);
 }
