@@ -13,5 +13,4 @@ Anywhoo, challenge complete I guess.
 
 ![](./screenshot.png)
 
-# recipe-page
-# social-links-profile
+
